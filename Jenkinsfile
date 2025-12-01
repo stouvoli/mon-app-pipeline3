@@ -3,7 +3,7 @@ pipeline {
         dockerfile {
             dir 'agent'
             // Le mapping du socket fonctionne sur Windows et Mac
-            args '-u root -v /var/run/docker.sock:/var/run/docker.sock --network mon-app-pipeline2_devsecops-net'
+            args '-u root -v /var/run/docker.sock:/var/run/docker.sock --network mon-app-pipeline3_devsecops-net'
         }
     }
     stages {
